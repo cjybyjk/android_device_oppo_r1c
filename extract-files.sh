@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #set -e
-export DEVICE=r7
+export DEVICE=r5
 export VENDOR=oppo
 
 if [ $# -eq 0 ]; then

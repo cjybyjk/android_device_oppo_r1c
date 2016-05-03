@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DEVICE=r7
+DEVICE=r5
 VENDOR=oppo
 
 OUTDIR=vendor/$VENDOR/$DEVICE
@@ -123,7 +123,7 @@ EOF
 
 LOCAL_PATH := \$(call my-dir)
 
-ifeq (\$(TARGET_DEVICE),r7)
+ifeq (\$(TARGET_DEVICE),r5)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := qcrilmsgtunnel

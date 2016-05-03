@@ -18,10 +18,10 @@ FORCE_32_BIT := true
 
 include device/oppo/msm8939-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/oppo/r7
+DEVICE_PATH := device/oppo/r5
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := r7,r7f,R7f
+TARGET_OTA_ASSERT_DEVICE := r5,R8106,R8107
 
 # Assertions
 TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt
@@ -32,7 +32,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 # Kernel
 BOARD_DTBTOOL_ARGS := --force-v2
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset 0x02000000
-TARGET_KERNEL_CONFIG := cyanogenmod_r7_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_r5_defconfig
 
 # Partition info
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -47,4 +47,4 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 13218315264 # 13218331648 - 16384
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # inherit from the proprietary version
--include vendor/oppo/r7/BoardConfigVendor.mk
+-include vendor/oppo/r5/BoardConfigVendor.mk

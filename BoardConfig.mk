@@ -21,7 +21,7 @@ include device/oppo/msm8939-common/BoardConfigCommon.mk
 DEVICE_PATH := device/oppo/r5
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := r5,R8106,R8107
+TARGET_OTA_ASSERT_DEVICE := r5,R5,R8106,R8107
 
 # Assertions
 TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt

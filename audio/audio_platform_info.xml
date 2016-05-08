@@ -45,12 +45,9 @@
 
     <backend_names>
         <device name="SND_DEVICE_OUT_HANDSET" backend="speaker" />
-        <device name="SND_DEVICE_OUT_HEADPHONES" backend="headphones" />
-        <device name="SND_DEVICE_OUT_VOICE_HEADPHONES" backend="headphones" />
         <device name="SND_DEVICE_OUT_SPEAKER" backend="speaker" />
         <device name="SND_DEVICE_OUT_VOICE_HANDSET" backend="speaker" />
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER" backend="speaker" />
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES" backend="speaker-and-headphones" />
     </backend_names>
 
     <pcm_ids>

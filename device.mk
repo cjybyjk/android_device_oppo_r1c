@@ -77,7 +77,8 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.target=dpm1 \
-    rild.libpath=/vendor/lib/libril-qc-qmi-1.so
+    rild.libpath=/vendor/lib/libril-qc-qmi-1.so \
+    ro.telephony.default_network=9
 
 # Wifi
 PRODUCT_COPY_FILES += \

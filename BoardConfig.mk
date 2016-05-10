@@ -46,5 +46,8 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 13218315264 # 13218331648 - 16384
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
+# SELinux
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+
 # inherit from the proprietary version
 -include vendor/oppo/r5/BoardConfigVendor.mk

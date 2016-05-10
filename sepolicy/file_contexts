@@ -1,0 +1,2 @@
+/sys/devices/soc.0/78d9000.usb/OTG_status			u:object_r:otg_toggle_file:s0
+

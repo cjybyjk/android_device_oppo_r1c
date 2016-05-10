@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M 6.9984602,1.01285 c -3.3133335,0 -6.00000015,2.6867 -6.00000015,6 l 0,4.6667 c
+0,1.1067 0.89333335,2 2.00000005,2 l 2,0 0,-5.3333 -2.6666667,0 0,-1.3334 c
+0,-2.58 2.0866667,-4.6666 4.6666668,-4.6666 2.5800005,0 4.6666658,2.0866
+4.6666658,4.6666 l 0,1.3334 -2.6666657,0 0,5.3333 1.9999997,0 c 1.106666,0
+2,-0.8933 2,-2 l 0,-4.6667 c 0,-3.3133 -2.686667,-6 -5.9999998,-6 z" />
+
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M 20.113063,12.01095 l 0,2.8885 0.722119,0 0,1.4442 -2.166357,0 0,-5.7769
+1.444238,0 -2.166357,-2.8885 -2.166358,2.8885 1.444239,0 0,5.7769 -2.166358,0
+0,-1.4948 c 0.505484,-0.2672 0.866543,-0.7799 0.866543,-1.3937 0,-0.8737
+-0.714898,-1.5886 -1.588662,-1.5886 -0.873764,0 -1.588663,0.7149
+-1.588663,1.5886 0,0.6138 0.36106,1.1265 0.866544,1.3937 l 0,1.4948 c 0,0.8016
+0.642686,1.4442 1.444238,1.4442 l 2.166358,0 0,2.2025 c -0.512705,0.2672
+-0.866543,0.7943 -0.866543,1.4081 0,0.881 0.714898,1.5887 1.588662,1.5887
+0.873764,0 1.588662,-0.7077 1.588662,-1.5887 0,-0.6138 -0.353839,-1.1409
+-0.866543,-1.4081 l 0,-2.2025 2.166357,0 c 0.801552,0 1.444238,-0.6426
+1.444238,-1.4442 l 0,-1.4442 0.72212,0 0,-2.8885 -2.888477,0 z" />
+
+</vector>

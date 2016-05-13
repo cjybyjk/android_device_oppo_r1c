@@ -31,5 +31,6 @@
     <string name="headset_summary">Set the USB port to operate in headset mode.</string>
     <string name="otg_title">USB device</string>
     <string name="otg_summary">Set the USB port to operate in USB OTG mode.</string>
+    <string name="use_as_default">Use as default</string>
 
 </resources>

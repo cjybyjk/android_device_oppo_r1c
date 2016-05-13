@@ -24,10 +24,12 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
+import android.preference.PreferenceManager;
 import android.util.Log;
 
 import java.io.BufferedReader;
@@ -41,6 +43,8 @@ public class HeadsetMonitorService extends Service {
     public static final String ACTION_SET_OTG_STATE =
             "com.cyanogenmod.settings.otgtoggle.ACTION_SET_OTG_STATE";
     public static final String EXTRA_ENABLED = "enabled";
+
+    public static final String PREF_OTG_AS_DEFAULT = "otg_as_default";
 
     private static final int OTG_NOTIFICATION_ID = 1;
     private static final String OTG_TOGGLE_FILE = "/sys/devices/soc.0/78d9000.usb/OTG_status";
@@ -73,12 +77,18 @@ public class HeadsetMonitorService extends Service {
             if (deviceNowConnected != mDeviceConnected) {
                 mDeviceConnected = deviceNowConnected;
                 mNotificationPriority = Notification.PRIORITY_DEFAULT;
-                updateNotification();
                 if (deviceNowConnected) {
                     mHandler.removeMessages(MSG_LOWER_PRIORITY);
                     mHandler.sendEmptyMessageDelayed(MSG_LOWER_PRIORITY,
                             LOWER_PRIORITY_AFTER_CONNECT_DELAY);
+
+                    SharedPreferences prefs =
+                            PreferenceManager.getDefaultSharedPreferences(context);
+                    if (prefs.getBoolean(PREF_OTG_AS_DEFAULT, false)) {
+                        setOtgEnabled(true);
+                    }
                 }
+                updateNotification();
             }
         }
     };

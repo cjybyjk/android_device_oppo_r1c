@@ -24,10 +24,13 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.CheckedTextView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -89,6 +92,14 @@ public class OtgModeChooserActivity extends Activity implements
         startService(new Intent(this, HeadsetMonitorService.class)
                 .setAction(HeadsetMonitorService.ACTION_SET_OTG_STATE)
                 .putExtra(HeadsetMonitorService.EXTRA_ENABLED, enableOtg));
+
+        CheckBox defaultCb = (CheckBox) mDialog.findViewById(R.id.as_default);
+        if (defaultCb.isChecked()) {
+            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+            prefs.edit()
+                    .putBoolean(HeadsetMonitorService.PREF_OTG_AS_DEFAULT, enableOtg)
+                    .apply();
+        }
 
         mDialog.dismiss();
     }

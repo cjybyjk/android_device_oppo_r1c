@@ -16,7 +16,20 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">OTG Mode Selector</string>
-    <string name="connection_notification_title">USB device connected</string>
-    <string name="connection_notification_text">The device is currently operating in headset mode.</string>
-    <string name="action_enable_otg">Switch to OTG mode</string>
+
+    <string name="connection_notification_title_headset">Device connected as headset</string>
+    <string name="connection_notification_title_otg">Device connected as USB device</string>
+    <string name="connection_notification_big_title">USB device connected</string>
+    <string name="connection_notification_text">Touch to change mode.</string>
+    <string name="connection_notification_big_text_headset">The device connected to the USB port is currently used as a headset.</string>
+    <string name="connection_notification_big_text_otg">The device connected to the USB port is currently used as a USB device.</string>
+    <string name="action_enable_otg">Use as USB device</string>
+    <string name="action_enable_headset">Use as headset</string>
+
+    <string name="selection_dialog_title">Use connected device as</string>
+    <string name="headset_title">Headset</string>
+    <string name="headset_summary">Set the USB port to operate in headset mode.</string>
+    <string name="otg_title">USB device</string>
+    <string name="otg_summary">Set the USB port to operate in USB OTG mode.</string>
+
 </resources>

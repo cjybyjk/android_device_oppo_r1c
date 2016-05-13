@@ -27,8 +27,12 @@
 
     <application
         android:icon="@mipmap/ic_launcher_settings"
-        android:label="@string/app_name"
-        android:theme="@style/Theme.Main">
+        android:label="@string/app_name">
+
+        <activity
+            android:name=".OtgModeChooserActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.SettingsDialog" />
 
         <service android:name=".HeadsetMonitorService" />
 
@@ -37,6 +41,7 @@
                 <action android:name="cyanogenmod.intent.action.INITIALIZE_CM_HARDWARE" />
             </intent-filter>
         </receiver>
+
     </application>
 
 </manifest>

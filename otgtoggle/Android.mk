@@ -22,6 +22,7 @@ LOCAL_CERTIFICATE := platform
 LOCAL_PACKAGE_NAME := OTGToggle
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
-    org.cyanogenmod.platform.internal
+    org.cyanogenmod.platform.internal \
+    android-support-v4
 
 include $(BUILD_PACKAGE)

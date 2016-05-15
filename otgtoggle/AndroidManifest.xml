@@ -34,7 +34,7 @@
             android:excludeFromRecents="true"
             android:theme="@style/Theme.SettingsDialog" />
 
-        <service android:name=".HeadsetMonitorService" />
+        <service android:name=".UsbDeviceMonitorService" />
 
         <receiver android:name=".Startup">
             <intent-filter>

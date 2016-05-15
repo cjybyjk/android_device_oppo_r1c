@@ -24,10 +24,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.SharedPreferences;
-import android.media.AudioManager;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
+import android.support.v4.content.LocalBroadcastManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.CheckBox;
@@ -37,20 +35,15 @@ import android.widget.TextView;
 
 public class OtgModeChooserActivity extends Activity implements
         DialogInterface.OnDismissListener, DialogInterface.OnClickListener, View.OnClickListener {
-    public static final String EXTRA_ENABLED = "enabled";
+    public static final String EXTRA_CURRENT_MODE = "current_mode";
 
     private AlertDialog mDialog;
     private LayoutInflater mLayoutInflater;
 
-    private final BroadcastReceiver mHeadsetStateReceiver = new BroadcastReceiver() {
+    private final BroadcastReceiver mDeviceDisconnectionReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            boolean connected = intent.getIntExtra("state", 0) != 0;
-            boolean microphone = intent.getIntExtra("microphone", 0) != 0;
-
-            if (!connected || microphone) {
-                mDialog.dismiss();
-            }
+            mDialog.dismiss();
         }
     };
 
@@ -67,12 +60,25 @@ public class OtgModeChooserActivity extends Activity implements
                 .show();
 
         LinearLayout container = (LinearLayout) mDialog.findViewById(R.id.container);
-        boolean otgEnabled = getIntent().getBooleanExtra(EXTRA_ENABLED, false);
+        int currentMode = getIntent().getIntExtra(EXTRA_CURRENT_MODE, -1);
 
+        inflateOption(R.string.auto_detect_title, R.string.auto_detect_summary,
+                UsbDeviceMonitorService.MODE_AUTO, currentMode, container);
         inflateOption(R.string.headset_title, R.string.headset_summary,
-                false, !otgEnabled, container);
+                UsbDeviceMonitorService.MODE_HEADSET, currentMode, container);
         inflateOption(R.string.otg_title, R.string.otg_summary,
-                true, otgEnabled, container);
+                UsbDeviceMonitorService.MODE_OTG, currentMode, container);
+
+        IntentFilter filter = new IntentFilter(UsbDeviceMonitorService.ACTION_DEVICES_DISCONNECTED);
+        LocalBroadcastManager lbm = LocalBroadcastManager.getInstance(this);
+        lbm.registerReceiver(mDeviceDisconnectionReceiver, filter);
+    }
+
+    @Override
+    protected void onDestroy() {
+        LocalBroadcastManager lbm = LocalBroadcastManager.getInstance(this);
+        lbm.unregisterReceiver(mDeviceDisconnectionReceiver);
+        super.onDestroy();
     }
 
     @Override
@@ -87,48 +93,28 @@ public class OtgModeChooserActivity extends Activity implements
 
     @Override
     public void onClick(View v) {
-        Boolean enableOtg = (Boolean) v.getTag();
-
-        startService(new Intent(this, HeadsetMonitorService.class)
-                .setAction(HeadsetMonitorService.ACTION_SET_OTG_STATE)
-                .putExtra(HeadsetMonitorService.EXTRA_ENABLED, enableOtg));
-
+        int mode = (Integer) v.getTag();
         CheckBox defaultCb = (CheckBox) mDialog.findViewById(R.id.as_default);
-        if (defaultCb.isChecked()) {
-            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-            prefs.edit()
-                    .putBoolean(HeadsetMonitorService.PREF_OTG_AS_DEFAULT, enableOtg)
-                    .apply();
-        }
+
+        startService(new Intent(this, UsbDeviceMonitorService.class)
+                .setAction(UsbDeviceMonitorService.ACTION_SET_DETECTION_MODE)
+                .putExtra(UsbDeviceMonitorService.EXTRA_MODE, mode)
+                .putExtra(UsbDeviceMonitorService.EXTRA_PERMANENT, defaultCb.isChecked()));
 
         mDialog.dismiss();
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-
-        IntentFilter filter = new IntentFilter(AudioManager.ACTION_HEADSET_PLUG);
-        registerReceiver(mHeadsetStateReceiver, filter);
-    }
-
-    @Override
-    protected void onStop() {
-        unregisterReceiver(mHeadsetStateReceiver);
-        super.onStop();
-    }
-
     private void inflateOption(final int titleResId, final int summaryResId,
-            boolean enableOtg, boolean selected, LinearLayout container) {
+            int mode, int currentMode, LinearLayout container) {
         View v = mLayoutInflater.inflate(R.layout.radio_with_summary, container, false);
         CheckedTextView title = (CheckedTextView) v.findViewById(android.R.id.title);
         TextView summary = (TextView) v.findViewById(android.R.id.summary);
 
         title.setText(titleResId);
-        title.setChecked(selected);
+        title.setChecked(mode == currentMode);
         summary.setText(summaryResId);
 
-        v.setTag(enableOtg);
+        v.setTag(mode);
         v.setOnClickListener(this);
         container.addView(v);
     }

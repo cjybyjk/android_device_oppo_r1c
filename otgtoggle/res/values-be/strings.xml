@@ -16,7 +16,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="auto_detect_title">Automatisk identifiering</string>
-  <string name="headset_title">Headset</string>
-  <string name="otg_title">USB-enhet</string>
+  <string name="app_name">Перамыкач рэжыму OTG</string>
+  <string name="connection_notification_title_headset">Прылада працуя як слухаўка</string>
+  <string name="connection_notification_title_otg">Прылад падлучаны праз USB</string>
+  <string name="connection_notification_title_detect">Вызначэнне падлучай прылады праз USB\u2026</string>
+  <string name="connection_notification_text">Краніся, каб змяніць стан</string>
+  <string name="headset_title">Слухаўкі</string>
 </resources>

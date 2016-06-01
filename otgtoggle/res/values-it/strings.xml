@@ -21,4 +21,12 @@
   <string name="connection_notification_title_otg">Dispositivo connesso come periferica USB</string>
   <string name="connection_notification_title_detect">Rilevazione tipologia dispositivo USB\u2026</string>
   <string name="connection_notification_text">Tocca per cambiare modalità</string>
+  <string name="selection_dialog_title">Usa il dispositivo connesso come</string>
+  <string name="auto_detect_title">Rilevamento automatico</string>
+  <string name="auto_detect_summary">Prova a rilevare automaticamente se il dispositivo connesso è una periferica USB o delle cuffie</string>
+  <string name="headset_title">Cuffie</string>
+  <string name="headset_summary">Imposta la porta USB per operare in modalità cuffie</string>
+  <string name="otg_title">Periferica USB</string>
+  <string name="otg_summary">Imposta la porta USB per operare in modalità periferica USB</string>
+  <string name="use_as_default">Ricorda decisione</string>
 </resources>

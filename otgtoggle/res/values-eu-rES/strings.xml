@@ -23,6 +23,7 @@
   <string name="connection_notification_text">Ukitu modua aldatzeko</string>
   <string name="selection_dialog_title">Erabili konektatutako gailua honela</string>
   <string name="auto_detect_title">Antzemate automatikoa</string>
+  <string name="auto_detect_summary">Saiatu automatikoki atzematen konektatutako gailua aurikularra ala USB gailua den</string>
   <string name="headset_title">Aurikularrak</string>
   <string name="headset_summary">Ezarri USB kaia aurikularrak moduan aritzeko</string>
   <string name="otg_title">USB gailua</string>

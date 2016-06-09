@@ -16,6 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">בורר מצב OTG</string>
   <string name="connection_notification_title_headset">התקן מחובר כאוזנייה</string>
   <string name="connection_notification_title_otg">התקן מחובר כהתקן USB</string>
   <string name="connection_notification_title_detect">מזהה סוג התקן USB\u2026</string>
@@ -26,4 +27,6 @@
   <string name="headset_title">אוזנייה</string>
   <string name="headset_summary">בחר את יציאת ה-USB שתפעל במצב אוזנייה</string>
   <string name="otg_title">התקן USB</string>
+  <string name="otg_summary">הגדר את יציאת ה-USB שתפעל במצב USB OTG</string>
+  <string name="use_as_default">זכור בחירה</string>
 </resources>

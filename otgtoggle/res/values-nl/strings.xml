@@ -16,7 +16,17 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">OTG-modus</string>
+  <string name="connection_notification_title_headset">Apparaat aangesloten als koptelefoon</string>
+  <string name="connection_notification_title_otg">Apparaat aangesloten als USB-apparaat</string>
+  <string name="connection_notification_title_detect">Soort USB-apparaat detecteren\u2026</string>
+  <string name="connection_notification_text">Tik om modus te wijzigen</string>
+  <string name="selection_dialog_title">Aangesloten apparaat gebruiken als</string>
+  <string name="auto_detect_title">Automatisch detecteren</string>
+  <string name="auto_detect_summary">Automatisch detecteren of het aangesloten apparaat een koptelefoon of een USB-apparaat is</string>
   <string name="headset_title">Koptelefoon</string>
+  <string name="headset_summary">USB-poort instellen als koptelefoonaansluiting</string>
   <string name="otg_title">USB-apparaat</string>
+  <string name="otg_summary">USB-poort instellen als USB OTG-aansluiting</string>
   <string name="use_as_default">Keuze onthouden</string>
 </resources>

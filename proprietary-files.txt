@@ -51,14 +51,10 @@ vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_hdr_gb_lib.so
 vendor/lib/libmmcamera_hdr_lib.so
 vendor/lib/libmmcamera_imglib.so
-vendor/lib/libmmcamera_imx214.so
 vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_pdaf.so
-vendor/lib/libmmcamera_s5k5e2.so
-vendor/lib/libmmcamera_sonyimx214_eeprom.so
 vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
-vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_wavelet_lib.so
 vendor/lib/libmmipl.so
 vendor/lib/libmmjpeg.so
@@ -97,11 +93,18 @@ vendor/lib/libchromatix_s5k5e2_snapshot.so
 vendor/lib/libchromatix_s5k5e2_video_hd.so
 vendor/lib/libchromatix_s5k5e2_zsl.so
 
+# Camera eeprom
+vendor/lib/libmmcamera_sonyimx214_eeprom.so
+
 # Camera firmware
 etc/firmware/cpp_firmware_v1_1_1.fw
 etc/firmware/cpp_firmware_v1_1_6.fw
 etc/firmware/cpp_firmware_v1_2_0.fw
 etc/firmware/cpp_firmware_v1_4_0.fw
+
+# Camera sensors
+vendor/lib/libmmcamera_imx214.so
+vendor/lib/libmmcamera_s5k5e2.so
 
 # DRM
 bin/qseecomd

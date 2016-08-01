@@ -1,0 +1,53 @@
+# Audio
+etc/firmware/left.tfa9890.config
+etc/firmware/left.tfa9890.speaker
+etc/firmware/left.tfa9890_music_table.eq
+etc/firmware/left.tfa9890_music_table.preset
+etc/firmware/left.tfa9890_n1c2.patch
+etc/firmware/left.tfa9890_voice_table.eq
+etc/firmware/left.tfa9890_voice_table.preset
+
+# Camera autofocus
+vendor/lib/libactuator_ak7345_camcorder.so
+vendor/lib/libactuator_ak7345_camera.so
+vendor/lib/libactuator_ak7345.so
+
+# Camera chromatix
+vendor/lib/libchromatix_imx214_common.so
+vendor/lib/libchromatix_imx214_default_video.so
+vendor/lib/libchromatix_imx214_hfr_120fps.so
+vendor/lib/libchromatix_imx214_hfr_60fps.so
+vendor/lib/libchromatix_imx214_hfr_90fps.so
+vendor/lib/libchromatix_imx214_liveshot.so
+vendor/lib/libchromatix_imx214_preview_binning.so
+vendor/lib/libchromatix_imx214_preview_night.so
+vendor/lib/libchromatix_imx214_preview.so
+vendor/lib/libchromatix_imx214_snapshot_hdr.so
+vendor/lib/libchromatix_imx214_snapshot_night.so
+vendor/lib/libchromatix_imx214_snapshot.so
+vendor/lib/libchromatix_imx214_video_binning.so
+vendor/lib/libchromatix_imx214_video_cmcc.so
+vendor/lib/libchromatix_imx214_video_hdr.so
+vendor/lib/libchromatix_s5k5e2_common.so
+vendor/lib/libchromatix_s5k5e2_default_video.so
+vendor/lib/libchromatix_s5k5e2_preview_fb.so
+vendor/lib/libchromatix_s5k5e2_preview_gesture.so
+vendor/lib/libchromatix_s5k5e2_preview.so
+vendor/lib/libchromatix_s5k5e2_snapshot_fb.so
+vendor/lib/libchromatix_s5k5e2_snapshot.so
+vendor/lib/libchromatix_s5k5e2_video_hd.so
+vendor/lib/libchromatix_s5k5e2_zsl.so
+
+# Camera eeprom
+vendor/lib/libmmcamera_sonyimx214_eeprom.so
+
+# Camera sensors
+vendor/lib/libmmcamera_imx214.so
+vendor/lib/libmmcamera_s5k5e2.so
+
+# Sensors
+vendor/lib/libcalmodule_memsic.so
+
+# Touchscreen
+etc/firmware/tp/14005/14005_FW_S3508_Tpk.img
+etc/firmware/tp/14005/14005_Limit_Tpk.img

@@ -15,9 +15,8 @@ vendor/lib/libactuator_ak7345.so
 # Camera chromatix
 vendor/lib/libchromatix_imx214_common.so
 vendor/lib/libchromatix_imx214_default_video.so
-vendor/lib/libchromatix_imx214_hfr_120fps.so
-vendor/lib/libchromatix_imx214_hfr_60fps.so
-vendor/lib/libchromatix_imx214_hfr_90fps.so
+vendor/lib/libchromatix_imx214_hfr_120.so
+vendor/lib/libchromatix_imx214_hfr_60.so
 vendor/lib/libchromatix_imx214_liveshot.so
 vendor/lib/libchromatix_imx214_preview_binning.so
 vendor/lib/libchromatix_imx214_preview_night.so
@@ -26,7 +25,6 @@ vendor/lib/libchromatix_imx214_snapshot_hdr.so
 vendor/lib/libchromatix_imx214_snapshot_night.so
 vendor/lib/libchromatix_imx214_snapshot.so
 vendor/lib/libchromatix_imx214_video_binning.so
-vendor/lib/libchromatix_imx214_video_cmcc.so
 vendor/lib/libchromatix_imx214_video_hdr.so
 vendor/lib/libchromatix_s5k5e2_common.so
 vendor/lib/libchromatix_s5k5e2_default_video.so

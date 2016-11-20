@@ -20,4 +20,13 @@
   <string name="connection_notification_title_headset">Urządzenie podłączone jako zestaw słuchawkowy</string>
   <string name="connection_notification_title_otg">Urządzenie podłączone jako urządzenie USB</string>
   <string name="connection_notification_title_detect">Wykrywanie typu urządzenia USB\u2026</string>
+  <string name="connection_notification_text">Dotknij, aby zmienić tryb</string>
+  <string name="selection_dialog_title">Używaj podłączonego urządzenia jako</string>
+  <string name="auto_detect_title">Automatyczna detekcja</string>
+  <string name="auto_detect_summary">Próbuje automatycznie wykryć, czy urządzenie to zestaw słuchawkowy lub urządzenie USB</string>
+  <string name="headset_title">Zestaw słuchawkowy</string>
+  <string name="headset_summary">Ustaw port USB do pracy w trybie zestawu słuchawkowego</string>
+  <string name="otg_title">Urządzenie USB</string>
+  <string name="otg_summary">Ustaw port USB do pracy w trybie USB OTG</string>
+  <string name="use_as_default">Zapamiętaj wybór</string>
 </resources>

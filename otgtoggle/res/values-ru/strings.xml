@@ -20,7 +20,7 @@
   <string name="connection_notification_title_headset">Устройство подключено как гарнитура</string>
   <string name="connection_notification_title_otg">Устройство подключено как USB-устройство</string>
   <string name="connection_notification_title_detect">Определение типа USB-устройства\u2026</string>
-  <string name="connection_notification_text">Нажмите для изменения режима</string>
+  <string name="connection_notification_text">Нажмите, чтобы изменить режим</string>
   <string name="selection_dialog_title">Использовать подключенное устройство как</string>
   <string name="auto_detect_title">Автоматическое определение</string>
   <string name="auto_detect_summary">Пытаться определять автоматически, является ли подключенное устройство гарнитурой или USB-устройством</string>

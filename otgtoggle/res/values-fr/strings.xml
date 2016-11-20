@@ -16,11 +16,5 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="connection_notification_title_detect">Identifierar typ av USB-enhet\u2026</string>
-  <string name="selection_dialog_title">Använd ansluten enhet som</string>
-  <string name="auto_detect_title">Automatisk identifiering</string>
-  <string name="headset_title">Headset</string>
-  <string name="otg_title">USB-enhet</string>
-  <string name="otg_summary">Ställ in USB-porten att fungera i USB OTG-läge</string>
-  <string name="use_as_default">Kom ihåg det här valet</string>
+  <string name="headset_title">Casque</string>
 </resources>

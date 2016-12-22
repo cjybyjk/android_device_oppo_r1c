@@ -15,4 +15,18 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"></resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">OTG 模式選擇器</string>
+  <string name="connection_notification_title_headset">裝置連接為耳機</string>
+  <string name="connection_notification_title_otg">裝置即可作為 USB 裝置連接</string>
+  <string name="connection_notification_title_detect">檢測 USB 裝置類型\u2026</string>
+  <string name="connection_notification_text">觸控即可更改模式</string>
+  <string name="selection_dialog_title">使用連接的裝置為</string>
+  <string name="auto_detect_title">自動偵測</string>
+  <string name="auto_detect_summary">嘗試自動檢測已連接裝置是耳機或 USB 裝置</string>
+  <string name="headset_title">有線耳機</string>
+  <string name="headset_summary">設定 USB 埠即可耳機模式操作</string>
+  <string name="otg_title">USB 裝置</string>
+  <string name="otg_summary">設定 USB 埠即可 USB OTG 模式操作</string>
+  <string name="use_as_default">記住此決定</string>
+</resources>

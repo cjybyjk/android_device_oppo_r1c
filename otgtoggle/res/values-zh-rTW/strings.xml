@@ -19,7 +19,7 @@
   <string name="app_name">OTG 模式選擇器</string>
   <string name="connection_notification_title_headset">裝置連接為耳機</string>
   <string name="connection_notification_title_otg">裝置即可作為 USB 裝置連接</string>
-  <string name="connection_notification_title_detect">檢測 USB 裝置類型\u2026</string>
+  <string name="connection_notification_title_detect">正在檢測 USB 裝置類型\u2026</string>
   <string name="connection_notification_text">觸控即可更改模式</string>
   <string name="selection_dialog_title">使用連接的裝置為</string>
   <string name="auto_detect_title">自動偵測</string>

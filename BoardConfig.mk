@@ -32,7 +32,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 # Kernel
 BOARD_DTBTOOL_ARGS := --force-v2
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset 0x02000000
-TARGET_KERNEL_CONFIG := cyanogenmod_r5_defconfig
+TARGET_KERNEL_CONFIG := lineageos_r5_defconfig
 
 # Partition info
 BOARD_FLASH_BLOCK_SIZE := 131072

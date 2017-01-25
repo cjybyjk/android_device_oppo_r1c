@@ -16,5 +16,17 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Selectorul modului OTG</string>
+  <string name="connection_notification_title_headset">Dispozitiv conectat ca set cu cască</string>
+  <string name="connection_notification_title_otg">Dispozitiv conectat ca dispozitiv USB</string>
+  <string name="connection_notification_title_detect">Detectare tip dispozitiv USB\u2026</string>
+  <string name="connection_notification_text">Atingeţi pentru a modifica modul</string>
+  <string name="selection_dialog_title">Utilizaţi dispozitivul conectat ca</string>
+  <string name="auto_detect_title">Detectare automată</string>
+  <string name="auto_detect_summary">Încercaţi să detectați automat dacă dispozitivul conectat este un set cu cascã sau un dispozitiv USB</string>
+  <string name="headset_title">Set cu cască</string>
+  <string name="headset_summary">Setaţi portul USB pentru a opera în modul set cu cască</string>
   <string name="otg_title">Dispozitiv USB</string>
+  <string name="otg_summary">Setaţi portul USB pentru a opera în modul USB OTG</string>
+  <string name="use_as_default">Reține decizia</string>
 </resources>

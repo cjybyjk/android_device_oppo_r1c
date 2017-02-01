@@ -15,4 +15,18 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"></resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">OTG Modu Seçici</string>
+  <string name="connection_notification_title_headset">Cihaz kulaklık olarak bağlandı</string>
+  <string name="connection_notification_title_otg">USB cihaz olarak bağlı</string>
+  <string name="connection_notification_title_detect">USB cihaz türü tespit ediliyor\u2026</string>
+  <string name="connection_notification_text">Profili değiştirmek için dokunun</string>
+  <string name="selection_dialog_title">Bağlı cihazı şu şekilde kullan</string>
+  <string name="auto_detect_title">Otomatik tespit</string>
+  <string name="auto_detect_summary">Bağlı cihazın bir kulaklık ya da bir USB aygıtı olup olmadığını otomatik olarak algılamaya çalış</string>
+  <string name="headset_title">Kulaklık</string>
+  <string name="headset_summary">Kulaklık modunda çalışmak üzere USB bağlantı noktasını ayarla</string>
+  <string name="otg_title">USB cihazı</string>
+  <string name="otg_summary">USB bağlantı noktasını USB OTG modunda çalışmak üzere ayarla</string>
+  <string name="use_as_default">Kararımı hatırla</string>
+</resources>

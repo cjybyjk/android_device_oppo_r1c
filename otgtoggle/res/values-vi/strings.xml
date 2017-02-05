@@ -15,4 +15,18 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"></resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Trình chọn chế độ OTG</string>
+  <string name="connection_notification_title_headset">Thiết bị đã kết nối là tai nghe</string>
+  <string name="connection_notification_title_otg">Thiết bị đã kết nối là USB</string>
+  <string name="connection_notification_title_detect">Phát hiện thiết bị USB kiểu\u2026</string>
+  <string name="connection_notification_text">Chạm vào để thay đổi chế độ</string>
+  <string name="selection_dialog_title">Sử dụng thiết bị đã kết nối như</string>
+  <string name="auto_detect_title">Tự động phát hiện</string>
+  <string name="auto_detect_summary">Thử phát hiện tự động cho dù thiết bị đã kết nối là tai nghe hoặc thiết bị USB</string>
+  <string name="headset_title">Tai nghe</string>
+  <string name="headset_summary">Thiết lập cổng USB để hoạt động trong chế độ tai nghe</string>
+  <string name="otg_title">Thiết bị USB</string>
+  <string name="otg_summary">Thiết lập cổng USB để hoạt động trong chế độ USB OTG</string>
+  <string name="use_as_default">Nhớ quyết định này</string>
+</resources>

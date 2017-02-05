@@ -16,14 +16,14 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">OTG odabir načina rada</string>
-  <string name="connection_notification_title_headset">Uređaj povezan kao slušalice</string>
-  <string name="connection_notification_title_otg">Uređaj povezan kao USB uređaj</string>
+  <string name="app_name">Odabir načina rada OTG-a</string>
+  <string name="connection_notification_title_headset">Uređaj je povezan kao slušalice</string>
+  <string name="connection_notification_title_otg">Uređaj je povezan kao USB uređaj</string>
   <string name="connection_notification_title_detect">Otkrivanje vrste USB uređaja\u2026</string>
   <string name="connection_notification_text">Dodirnite za promjenu načina rada</string>
-  <string name="selection_dialog_title">Koristi priključeni uređaj kao</string>
+  <string name="selection_dialog_title">Upotijebite priključeni uređaj kao</string>
   <string name="auto_detect_title">Automatsko otkrivanje</string>
-  <string name="auto_detect_summary">Pokušaj automatski otkriti da li je povezani uređaj slušalice ili USB uređaj</string>
+  <string name="auto_detect_summary">Automatski će pokušati otkriti je li povezani uređaj USB uređaj ili slušalice</string>
   <string name="headset_title">Slušalice</string>
   <string name="headset_summary">Postavi USB priključak u način rada slušalica</string>
   <string name="otg_title">USB uređaj</string>

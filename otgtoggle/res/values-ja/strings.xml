@@ -19,7 +19,7 @@
   <string name="app_name">OTGモード選択</string>
   <string name="connection_notification_title_headset">デバイスをヘッドセットとして接続済み</string>
   <string name="connection_notification_title_otg">デバイスをUSBデバイスとして接続済み</string>
-  <string name="connection_notification_title_detect">USBデバイスの種類を検出中\u2026</string>
+  <string name="connection_notification_title_detect">USBデバイスの種類を検出中...</string>
   <string name="connection_notification_text">タップしてモードを変更する</string>
   <string name="selection_dialog_title">接続されたデバイスを以下として使用する</string>
   <string name="auto_detect_title">自動検出</string>

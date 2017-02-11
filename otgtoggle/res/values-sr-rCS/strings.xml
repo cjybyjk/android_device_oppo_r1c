@@ -15,9 +15,4 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Режим OTG</string>
-  <string name="connection_notification_title_headset">Пристрій підключено як гарнітура</string>
-  <string name="connection_notification_title_otg">Пристрій підключено як USB-пристрій</string>
-  <string name="connection_notification_title_detect">Виявлення USB пристрою type\u2026</string>
-</resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"></resources>

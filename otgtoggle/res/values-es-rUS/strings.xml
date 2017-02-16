@@ -20,7 +20,7 @@
   <string name="connection_notification_title_headset">Dispositivo conectado como auriculares</string>
   <string name="connection_notification_title_otg">Dispositivo conectado como dispositivo USB</string>
   <string name="connection_notification_title_detect">Detectando el tipo de dispositivo USB\u2026</string>
-  <string name="connection_notification_text">Toca para cambiar el modo</string>
+  <string name="connection_notification_text">Pulsa para cambiar el modo</string>
   <string name="selection_dialog_title">Utilizar el dispositivo conectado como</string>
   <string name="auto_detect_title">Detección automática</string>
   <string name="auto_detect_summary">Intentar detectar automáticamente si el dispositivo conectado es un auricular o un dispositivo USB</string>

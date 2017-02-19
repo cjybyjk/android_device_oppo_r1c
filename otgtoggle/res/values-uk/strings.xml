@@ -20,4 +20,13 @@
   <string name="connection_notification_title_headset">Пристрій підключено як гарнітура</string>
   <string name="connection_notification_title_otg">Пристрій підключено як USB-пристрій</string>
   <string name="connection_notification_title_detect">Виявлення USB пристрою type\u2026</string>
+  <string name="connection_notification_text">Торкніться, щоб змінити режим</string>
+  <string name="selection_dialog_title">Використовувати під\'єднаний пристрій як</string>
+  <string name="auto_detect_title">Автоматичне визначення</string>
+  <string name="auto_detect_summary">Намагатися автоматично визначати, під\'єднаний пристрій є гарнітурою чи USB пристроєм</string>
+  <string name="headset_title">Гарнітура</string>
+  <string name="headset_summary">Встановити USB-порт для роботи в режимі гарнітури</string>
+  <string name="otg_title">USB-пристрій</string>
+  <string name="otg_summary">Встановити USB-порт для роботи в режимі USB OTG</string>
+  <string name="use_as_default">Запам\'ятати вибір</string>
 </resources>

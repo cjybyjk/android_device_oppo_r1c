@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">OTG 模式選擇器</string>
+  <string name="app_name">OTG 模式選擇工具</string>
   <string name="connection_notification_title_headset">裝置連接為耳機</string>
   <string name="connection_notification_title_otg">裝置即可作為 USB 裝置連接</string>
   <string name="connection_notification_title_detect">檢測 USB 裝置類型\u2026</string>

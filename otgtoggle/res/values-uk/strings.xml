@@ -19,7 +19,6 @@
   <string name="app_name">Режим OTG</string>
   <string name="connection_notification_title_headset">Пристрій підключено як гарнітура</string>
   <string name="connection_notification_title_otg">Пристрій підключено як USB-пристрій</string>
-  <string name="connection_notification_title_detect">Виявлення USB пристрою type\u2026</string>
   <string name="connection_notification_text">Торкніться, щоб змінити режим</string>
   <string name="selection_dialog_title">Використовувати під\'єднаний пристрій як</string>
   <string name="auto_detect_title">Автоматичне визначення</string>

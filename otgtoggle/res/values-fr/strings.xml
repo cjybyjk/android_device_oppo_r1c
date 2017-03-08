@@ -16,5 +16,17 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Sélecteur de Mode OTG</string>
+  <string name="connection_notification_title_headset">Périphérique connecté comme casque</string>
+  <string name="connection_notification_title_otg">Appareil connecté en tant que périphérique USB</string>
+  <string name="connection_notification_title_detect">Détection du type de périphérique USB\u2026</string>
+  <string name="connection_notification_text">Touchez pour changer de mode</string>
+  <string name="selection_dialog_title">Utiliser le périphérique connecté en tant que</string>
+  <string name="auto_detect_title">Détection automatique</string>
+  <string name="auto_detect_summary">Essayer de détecter automatiquement si le périphérique connecté est un casque ou un périphérique USB</string>
   <string name="headset_title">Casque</string>
+  <string name="headset_summary">Autoriser le port USB à fonctionner en mode casque</string>
+  <string name="otg_title">Périphérique USB</string>
+  <string name="otg_summary">Met le port USB en mode OTG</string>
+  <string name="use_as_default">Se souvenir de mon choix</string>
 </resources>

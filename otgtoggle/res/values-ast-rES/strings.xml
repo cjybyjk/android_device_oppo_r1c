@@ -21,5 +21,12 @@
   <string name="connection_notification_title_otg">Preséu coneutáu como preséu USB</string>
   <string name="connection_notification_title_detect">Deteutando triba de preséu USB\u2026</string>
   <string name="connection_notification_text">Toca pa camudar el mou</string>
+  <string name="selection_dialog_title">Usar preséu coneutáu como</string>
   <string name="auto_detect_title">Deteición automática</string>
+  <string name="auto_detect_summary">Tenta de deteutar si\'l preséu coneutáu ye USB o auriculares</string>
+  <string name="headset_title">Auriculares</string>
+  <string name="headset_summary">Afita\'l puertu USB pa operar nel mou d\'auriculares</string>
+  <string name="otg_title">Preséu USB</string>
+  <string name="otg_summary">Afita\'l puertu USB pa operar nel mou d\'USB OTG</string>
+  <string name="use_as_default">Recordar decisión</string>
 </resources>

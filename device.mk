@@ -47,8 +47,7 @@ TARGET_SCREEN_WIDTH := 1080
 # Camera
 PRODUCT_PACKAGES += \
     libshim_camera \
-    libboringssl-compat \
-    libstlport
+    libboringssl-compat
 
 # Dalvik/HWUI configs
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)

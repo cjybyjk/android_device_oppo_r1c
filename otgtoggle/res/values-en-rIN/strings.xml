@@ -15,4 +15,18 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"></resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">OTG Mode Selector</string>
+  <string name="connection_notification_title_headset">Device connected as headset</string>
+  <string name="connection_notification_title_otg">Device connected as USB device</string>
+  <string name="connection_notification_title_detect">Detecting USB device type\u2026</string>
+  <string name="connection_notification_text">Touch to change mode</string>
+  <string name="selection_dialog_title">Use connected device as</string>
+  <string name="auto_detect_title">Automatic detection</string>
+  <string name="auto_detect_summary">Try to detect automatically whether the connected device is a headset or a USB device</string>
+  <string name="headset_title">Headset</string>
+  <string name="headset_summary">Set the USB port to operate in headset mode</string>
+  <string name="otg_title">USB device</string>
+  <string name="otg_summary">Set the USB port to operate in USB OTG mode</string>
+  <string name="use_as_default">Remember decision</string>
+</resources>

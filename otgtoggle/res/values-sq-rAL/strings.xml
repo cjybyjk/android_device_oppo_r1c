@@ -15,4 +15,18 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"></resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Zgjedhësi i Profilit OTG</string>
+  <string name="connection_notification_title_headset">Pajisja e lidhur si kufje</string>
+  <string name="connection_notification_title_otg">Pajisja e lidhur si USB</string>
+  <string name="connection_notification_title_detect">Duke përcaktuar llojin e pajisjes USB\u2026</string>
+  <string name="connection_notification_text">Prek për të ndërruar mënyrën e lidhjes</string>
+  <string name="selection_dialog_title">Përdor pajisjen e lidhur si</string>
+  <string name="auto_detect_title">Përcaktim automatik</string>
+  <string name="auto_detect_summary">Mundohu të përcaktosh automatikisht nëse pajisja e lidhur është kufje apo USB</string>
+  <string name="headset_title">Kufje</string>
+  <string name="headset_summary">Cakto portin e USB që të përdoret për kufje</string>
+  <string name="otg_title">USB</string>
+  <string name="otg_summary">Cakto portin e USB që të përdoret për USB OTG</string>
+  <string name="use_as_default">Mbaje mend vendimin</string>
+</resources>

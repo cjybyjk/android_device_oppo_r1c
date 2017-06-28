@@ -44,7 +44,7 @@ vendor/lib/libmmcamera_imx214.so
 vendor/lib/libmmcamera_s5k5e2.so
 
 # Sensors
-vendor/lib/libcalmodule_memsic.so
+vendor/lib/libcalmodule_memsic.so|88f069f25807aecafd46b0be3c47b7a192f6b767
 
 # Touchscreen
 etc/firmware/tp/14005/14005_FW_S3508_Tpk.img

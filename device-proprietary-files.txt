@@ -7,6 +7,9 @@ etc/tfa9890/settings/TFA9890_N1C3_1_7_1.patch:etc/firmware/left.tfa9890_n1c2.pat
 etc/tfa9890/settings/14005/Speech_0_0_TFA9890_1111.eq:etc/firmware/left.tfa9890_voice_table.eq|c0212f3c5068e4e4217b0bf006642b1df7fb776c
 etc/tfa9890/settings/14005/Speech_0_0_TFA9890_1111.preset:etc/firmware/left.tfa9890_voice_table.preset
 
+# Camera
+vendor/lib/libmmcamera_faceproc.so|ac49bcc1aa20ff9f2c118f6c233b658f93543202
+
 # Camera autofocus
 vendor/lib/libactuator_ak7345_camcorder.so
 vendor/lib/libactuator_ak7345_camera.so

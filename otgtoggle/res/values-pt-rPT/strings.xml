@@ -17,15 +17,15 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Seletor de modo OTG</string>
-  <string name="connection_notification_title_headset">Dispositivo ligado como auricular</string>
+  <string name="connection_notification_title_headset">Dispositivo ligado como auscultadores</string>
   <string name="connection_notification_title_otg">Dispositivo ligado como dispositivo USB</string>
   <string name="connection_notification_title_detect">A detetar o tipo de dispositivo USB\u2026</string>
   <string name="connection_notification_text">Toque para alterar o modo</string>
   <string name="selection_dialog_title">Usar o dispositivo conectado como</string>
   <string name="auto_detect_title">Deteção automática</string>
-  <string name="auto_detect_summary">Tenta detetar automaticamente se o dispositivo ligado é um auricular ou um dispositivo USB</string>
-  <string name="headset_title">Auricular</string>
-  <string name="headset_summary">Definir a porta USB para operar no modo de auriculares</string>
+  <string name="auto_detect_summary">Tenta detetar automaticamente se o dispositivo ligado é um par de auscultadores ou um dispositivo USB</string>
+  <string name="headset_title">Auscultadores</string>
+  <string name="headset_summary">Definir a porta USB para operar no modo de auscultadores</string>
   <string name="otg_title">Dispositivo USB</string>
   <string name="otg_summary">Definir a porta USB para operar no modo USB OTG</string>
   <string name="use_as_default">Lembrar seleção</string>

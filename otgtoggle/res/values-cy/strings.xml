@@ -15,4 +15,18 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"></resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Dewisydd Modd OTG</string>
+  <string name="connection_notification_title_headset">Dyfais wedi\'i chysylltu fel clustffonau</string>
+  <string name="connection_notification_title_otg">Dyfais wedi\'i chysylltu fel dyfais USB</string>
+  <string name="connection_notification_title_detect">Yn canfod math y ddyfais USB\u2026</string>
+  <string name="connection_notification_text">Cyffyrdda i newid modd</string>
+  <string name="selection_dialog_title">Defnyddio’r ddyfais a gysylltwyd fel</string>
+  <string name="auto_detect_title">Synhwyriad awtomatig</string>
+  <string name="auto_detect_summary">Ceisio synhwyro\'n awtomatig a yw\'r ddyfais a gysylltwyd yn glustffonau neu\'n ddyfais USB.</string>
+  <string name="headset_title">Clustffonau</string>
+  <string name="headset_summary">Gosod y porth USB i weithio yn y modd clustffonau</string>
+  <string name="otg_title">Dyfais USB</string>
+  <string name="otg_summary">Gosod y porth USB i weithio yn y modd OTG</string>
+  <string name="use_as_default">Cofio\'r dewis</string>
+</resources>

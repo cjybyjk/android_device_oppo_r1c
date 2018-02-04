@@ -15,4 +15,18 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"></resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Режим на OTG селектор</string>
+  <string name="connection_notification_title_headset">Уредот е поврзан како слушалки</string>
+  <string name="connection_notification_title_otg">Уредот е поврзан како USB уред</string>
+  <string name="connection_notification_title_detect">Откривање на тип на USB уред\u2026</string>
+  <string name="connection_notification_text">Допрете за да го промените режимот</string>
+  <string name="selection_dialog_title">Користете поврзан уред како</string>
+  <string name="auto_detect_title">Автоматско откривање</string>
+  <string name="auto_detect_summary">Обиди се автоматски да откриеш дали поврзаниот уред е USB уред или слушалки</string>
+  <string name="headset_title">Слушалки</string>
+  <string name="headset_summary">Постави USB port да работи во режим на слушалки</string>
+  <string name="otg_title">USB уред</string>
+  <string name="otg_summary">Постави USB port да работи во режим на USB OTG</string>
+  <string name="use_as_default">Запомни одлука</string>
+</resources>

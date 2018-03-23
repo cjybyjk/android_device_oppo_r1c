@@ -25,7 +25,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-import init.qcom-common.rc
+import /vendor/etc/init/hw/init.qcom-common.rc
 
 on init
     export LD_SHIM_LIBS "/system/bin/mm-qcamera-daemon|libshim_camera.so:/system/lib/hw/camera.vendor.msm8916.so|libshim_camera.so:/system/vendor/lib/libmmqjpeg_codec.so|libboringssl-compat.so"

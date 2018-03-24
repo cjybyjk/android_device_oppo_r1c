@@ -17,7 +17,7 @@
 LOCAL_PATH := device/oppo/r1c
 
 # Overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
 
 # ANT+
 PRODUCT_PACKAGES += \

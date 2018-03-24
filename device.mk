@@ -26,8 +26,8 @@ $(call inherit-product, device/oppo/msm8939-common/msm8939.mk)
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_platform_info.xml:system/vendor/etc/audio_platform_info.xml \
-    $(LOCAL_PATH)/audio/mixer_paths_wcd9306.xml:system/vendor/etc/mixer_paths_wcd9306.xml
+    $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
+    $(LOCAL_PATH)/audio/mixer_paths_wcd9306.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_wcd9306.xml
 
 # ACDB Loader calibration
 PRODUCT_COPY_FILES += \
@@ -63,8 +63,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Input configuration
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/vendor/usr/keylayout/gpio-keys.kl \
-    $(LOCAL_PATH)/keylayout/synaptics-s3508-kpd.kl:system/vendor/usr/keylayout/synaptics-s3508-kpd.kl
+    $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
+    $(LOCAL_PATH)/keylayout/synaptics-s3508-kpd.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics-s3508-kpd.kl
 
 # OTG
 PRODUCT_PACKAGES += \
@@ -83,7 +83,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Wifi
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv.bin:system/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
+    $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
 
 # Call the proprietary setup
 $(call inherit-product, vendor/oppo/r5/r5-vendor.mk)

@@ -17,7 +17,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="connection_notification_title_headset">Enhet ansluten som headset</string>
+  <string name="connection_notification_title_otg">Enhet ansluten som USB-enhet</string>
   <string name="connection_notification_title_detect">Identifierar typ av USB-enhet\u2026</string>
+  <string name="connection_notification_text">Tryck för att ändra läge</string>
   <string name="selection_dialog_title">Använd ansluten enhet som</string>
   <string name="auto_detect_title">Automatisk identifiering</string>
   <string name="headset_title">Headset</string>

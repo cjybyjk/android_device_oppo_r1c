@@ -74,10 +74,7 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8916 \
-    Snap \
-    libshim_camera \
-    libboringssl-compat \
-    libstlport
+    Snap
 
 # Charger
 WITH_CM_CHARGER := false

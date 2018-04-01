@@ -160,8 +160,10 @@ etc/tfa9890/settings/14045/Speech_0_0_TFA9890_1111.eq:etc/firmware/left.tfa9890_
 etc/tfa9890/settings/14045/Speech_0_0_TFA9890_1111.preset:etc/firmware/left.tfa9890_voice_table.preset
 
 # Camera
+vendor/lib/libmmcamera2_q3a_core.so
 vendor/lib/libmmcamera_faceproc.so
-vendor/lib/libseemore.so
+vendor/lib/libts_detected_face_hal.so
+vendor/lib/libts_face_beautify_hal.so
 
 # Camera autofocus
 vendor/lib/libactuator_ak7345_14045_camcorder.so

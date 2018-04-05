@@ -58,9 +58,9 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 BOARD_HEALTHD_CUSTOM_CHARGER_RES := $(DEVICE_PATH)/charger/images
 
 # CM Hardware
-BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/cmhw
 BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS += \
+    $(DEVICE_PATH)/cmhw \
     hardware/cyanogen/cmhw
 
 # Cpusets

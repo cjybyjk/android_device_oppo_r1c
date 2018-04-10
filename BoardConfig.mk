@@ -79,9 +79,6 @@ USE_OPENGL_RENDERER := true
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
 
-# Keymaster
-TARGET_KEYMASTER_WAIT_FOR_QSEE := true
-
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_r1c
 TARGET_RECOVERY_DEVICE_MODULES := libinit_r1c

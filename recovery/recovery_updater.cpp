@@ -36,7 +36,7 @@
 #ifdef USES_BOOTDEVICE_PATH
 #define TZ_PART_PATH "/dev/block/bootdevice/by-name/tz"
 #else
-#define TZ_PART_PATH "/dev/block/platform/msm_sdcc.1/by-name/tz"
+#define TZ_PART_PATH "/dev/block/platform/soc.0/7824900.sdhci/by-name/tz"
 #endif
 #define TZ_VER_STR "QC_IMAGE_VERSION_STRING="
 #define TZ_VER_STR_LEN 24

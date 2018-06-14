@@ -63,8 +63,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Input configuration
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-    $(LOCAL_PATH)/keylayout/synaptics-s3508-kpd.kl:system/usr/keylayout/synaptics-s3508-kpd.kl
+    $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/vendor/usr/keylayout/gpio-keys.kl \
+    $(LOCAL_PATH)/keylayout/synaptics-s3508-kpd.kl:system/vendor/usr/keylayout/synaptics-s3508-kpd.kl
 
 # OTG
 PRODUCT_PACKAGES += \

@@ -56,5 +56,11 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
+# Shim
+TARGET_LD_SHIM_LIBS += \
+    /system/bin/mm-qcamera-daemon|libshim_camera.so \
+    /system/lib/hw/camera.vendor.msm8916.so|libshim_camera.so \
+    /system/vendor/lib/libmmqjpeg_codec.so|libboringssl-compat.so
+
 # Inherit from proprietary files
 include vendor/oppo/r5/BoardConfigVendor.mk

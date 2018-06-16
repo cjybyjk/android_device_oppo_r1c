@@ -14,7 +14,7 @@
   * limitations under the License.
   */
 
-package com.cyanogenmod.settings.otgtoggle;
+package org.lineageos.settings.otgtoggle;
 
 import android.os.Message;
 

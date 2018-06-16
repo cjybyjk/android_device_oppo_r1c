@@ -16,11 +16,11 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           android:sharedUserId="android.uid.system"
-          package="com.cyanogenmod.settings.otgtoggle"
+          package="org.lineageos.settings.otgtoggle"
           android:versionCode="1"
           android:versionName="1.0" >
 
-    <uses-permission android:name="cyanogenmod.permission.HARDWARE_ABSTRACTION_ACCESS" />
+    <uses-permission android:name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS" />
 
     <uses-sdk
         android:minSdkVersion="24" />
@@ -40,7 +40,7 @@
 
         <receiver android:name=".Startup">
             <intent-filter>
-                <action android:name="cyanogenmod.intent.action.INITIALIZE_CM_HARDWARE" />
+                <action android:name="lineageos.intent.action.INITIALIZE_LINEAGE_HARDWARE" />
             </intent-filter>
         </receiver>
 

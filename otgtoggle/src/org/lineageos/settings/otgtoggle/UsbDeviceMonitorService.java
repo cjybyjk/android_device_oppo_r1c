@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.settings.otgtoggle;
+package org.lineageos.settings.otgtoggle;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -40,11 +40,11 @@ public class UsbDeviceMonitorService extends Service {
 
     /* broadcast action */
     public static final String ACTION_DEVICES_DISCONNECTED =
-            "com.cyanogenmod.settings.otgtoggle.action.DEVICES_DISCONNECTED";
+            "org.lineageos.settings.otgtoggle.action.DEVICES_DISCONNECTED";
 
     /* service action */
     public static final String ACTION_SET_DETECTION_MODE =
-            "com.cyanogenmod.settings.otgtoggle.action.SET_DETECTION_MODE";
+            "org.lineageos.settings.otgtoggle.action.SET_DETECTION_MODE";
     public static final String EXTRA_MODE = "mode";
     public static final String EXTRA_PERMANENT = "permanent";
 

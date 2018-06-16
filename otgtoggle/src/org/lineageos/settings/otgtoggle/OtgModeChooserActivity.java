@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.settings.otgtoggle;
+package org.lineageos.settings.otgtoggle;
 
 import android.annotation.Nullable;
 import android.app.Activity;

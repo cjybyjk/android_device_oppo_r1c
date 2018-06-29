@@ -58,7 +58,7 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Shim
 TARGET_LD_SHIM_LIBS += \
-    /system/bin/mm-qcamera-daemon|libshim_camera.so \
+    /system/vendor/lib/libmmcamera2_stats_modules.so|libshim_camera.so \
     /system/lib/hw/camera.vendor.msm8916.so|libshim_camera.so \
     /system/vendor/lib/libmmqjpeg_codec.so|libboringssl-compat.so
 

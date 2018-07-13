@@ -18,7 +18,7 @@
 set -e
 
 export BITS=32
-export DEVICE=r5
+export DEVICE=r1c
 export DEVICE_COMMON=msm8939-common
 export VENDOR=oppo
 

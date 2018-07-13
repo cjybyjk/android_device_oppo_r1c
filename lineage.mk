@@ -18,22 +18,19 @@
 # Inherit framework first
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from r5 device
-$(call inherit-product, device/oppo/r5/device.mk)
+# Inherit from r1c device
+$(call inherit-product, device/oppo/r1c/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_r5
-PRODUCT_DEVICE := r5
+PRODUCT_NAME := lineage_r1c
+PRODUCT_DEVICE := r1c
 PRODUCT_BRAND := OPPO
-PRODUCT_MODEL := R5
+PRODUCT_MODEL := R1C
 PRODUCT_MANUFACTURER := OPPO
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="msm8916_32-user 4.4.4 KTU84P eng.root.20150806 release-keys" \
-    TARGET_DEVICE="R5"
-
-BUILD_FINGERPRINT=OPPO/R8106/R5:4.4.4/KTU84P/1413614073:user/release-keys
+    TARGET_DEVICE="R1C"

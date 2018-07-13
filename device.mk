@@ -17,7 +17,7 @@
 
 FORCE_32_BIT := true
 
-LOCAL_PATH := device/oppo/r5
+LOCAL_PATH := device/oppo/r1c
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -27,8 +27,8 @@ $(call inherit-product, device/oppo/msm8939-common/msm8939.mk)
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_extcodec.xml \
-    $(LOCAL_PATH)/audio/mixer_paths_wcd9306.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_wcd9306.xml
+    $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
+    $(LOCAL_PATH)/audio/mixer_paths_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_mtp.xml
 
 # ACDB Loader calibration
 PRODUCT_COPY_FILES += \
@@ -42,8 +42,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/acdbdata/WorkspaceFile.qwsp:system/etc/acdbdata/MTP/WorkspaceFile.qwsp
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -55,19 +55,15 @@ $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk
 
 # Density
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=480
+    ro.sf.lcd_density=320
 
 # Input configuration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/keylayout/synaptics-s3508-kpd.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics-s3508-kpd.kl
-
-# OTG
-PRODUCT_PACKAGES += \
-    OTGToggle
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -78,11 +74,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.target=dpm1 \
     rild.libpath=/vendor/lib/libril-qc-qmi-1.so \
-    ro.telephony.default_network=9
+    ro.telephony.default_network=9,9 \
+    ro.telephony.ril.config=simactivation,sim2gsmonly \
+    persist.radio.multisim.config=dsds
 
 # Wifi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
 
 # Call the proprietary setup
-$(call inherit-product, vendor/oppo/r5/r5-vendor.mk)
+$(call inherit-product, vendor/oppo/r1c/r1c-vendor.mk)

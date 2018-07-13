@@ -18,10 +18,10 @@ FORCE_32_BIT := true
 
 include device/oppo/msm8939-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/oppo/r5
+DEVICE_PATH := device/oppo/r1c
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := r5,R5,R8106,R8107
+TARGET_OTA_ASSERT_DEVICE := r1c,R1C,R8207,R8205,R8200
 
 # Assertions
 TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt
@@ -29,13 +29,14 @@ TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
-# Camera
-BOARD_GLOBAL_CFLAGS += -DCONFIG_OPPO_CAMERA_51
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_r1c
+TARGET_RECOVERY_DEVICE_MODULES := libinit_r1c
 
 # Kernel
 BOARD_DTBTOOL_ARGS := --force-v2
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset 0x02000000
-TARGET_KERNEL_CONFIG := lineageos_r5_defconfig
+TARGET_KERNEL_CONFIG := lineageos_r1c_defconfig
 
 # Keymaster
 TARGET_KEYMASTER_WAIT_FOR_QSEE := false
@@ -53,9 +54,6 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 13218315264 # 13218331648 - 16384
 LZMA_RAMDISK_TARGETS := recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
-# SELinux
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
-
 # Shim
 TARGET_LD_SHIM_LIBS += \
     /system/vendor/lib/libmmcamera2_stats_modules.so|libshim_camera.so \
@@ -63,4 +61,4 @@ TARGET_LD_SHIM_LIBS += \
     /system/vendor/lib/libmmqjpeg_codec.so|libboringssl-compat.so
 
 # Inherit from proprietary files
-include vendor/oppo/r5/BoardConfigVendor.mk
+include vendor/oppo/r1c/BoardConfigVendor.mk

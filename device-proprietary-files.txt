@@ -1,57 +1,90 @@
 # Audio - from stock, eq converted
 etc/tfa9890/settings/TFA9890_N1B12_N1C3_v2.config:vendor/firmware/left.tfa9890.config
-etc/tfa9890/settings/14005/TFA9890_1111.speaker:vendor/firmware/left.tfa9890.speaker
-etc/tfa9890/settings/14005/NHQ_0_0_TFA9890_1111.eq:vendor/firmware/left.tfa9890_music_table.eq|bebe059d25be3694138630357dca9e49d45e7403
-etc/tfa9890/settings/14005/NHQ_0_0_TFA9890_1111.preset:vendor/firmware/left.tfa9890_music_table.preset
+etc/tfa9890/settings/14045/TFA9890_1111.speaker:vendor/firmware/left.tfa9890.speaker
+etc/tfa9890/settings/14045/NHQ_0_0_TFA9890_1111.eq:vendor/firmware/left.tfa9890_music_table.eq
+etc/tfa9890/settings/14045/NHQ_0_0_TFA9890_1111.preset:vendor/firmware/left.tfa9890_music_table.preset
 etc/tfa9890/settings/TFA9890_N1C3_1_7_1.patch:vendor/firmware/left.tfa9890_n1c2.patch
-etc/tfa9890/settings/14005/Speech_0_0_TFA9890_1111.eq:vendor/firmware/left.tfa9890_voice_table.eq|c0212f3c5068e4e4217b0bf006642b1df7fb776c
-etc/tfa9890/settings/14005/Speech_0_0_TFA9890_1111.preset:vendor/firmware/left.tfa9890_voice_table.preset
+etc/tfa9890/settings/14045/Speech_0_0_TFA9890_1111.eq:vendor/firmware/left.tfa9890_voice_table.eq
+etc/tfa9890/settings/14045/Speech_0_0_TFA9890_1111.preset:vendor/firmware/left.tfa9890_voice_table.preset
 
 # Camera
-vendor/lib/libmmcamera_faceproc.so|ac49bcc1aa20ff9f2c118f6c233b658f93543202
+vendor/lib/libmmcamera_faceproc.so
+vendor/lib/libseemore.so
 
 # Camera autofocus
-vendor/lib/libactuator_ak7345_camcorder.so
-vendor/lib/libactuator_ak7345_camera.so
-vendor/lib/libactuator_ak7345.so
+vendor/lib/libactuator_ak7345_14045_camcorder.so
+vendor/lib/libactuator_ak7345_14045_camera.so
+vendor/lib/libactuator_ak7345_14045.so
+vendor/lib/libactuator_ak7345_14045_truly_camcorder.so
+vendor/lib/libactuator_ak7345_14045_truly_camera.so
+vendor/lib/libactuator_ak7345_14045_truly.so
+vendor/lib/libactuator_rohm_bu64243gwz_14045_camcorder.so
+vendor/lib/libactuator_rohm_bu64243gwz_14045_camera.so
+vendor/lib/libactuator_rohm_bu64243gwz_14045.so
 
 # Camera chromatix
-vendor/lib/libchromatix_imx214_common.so
-vendor/lib/libchromatix_imx214_default_video.so
-vendor/lib/libchromatix_imx214_hfr_120.so
-vendor/lib/libchromatix_imx214_hfr_60.so
-vendor/lib/libchromatix_imx214_liveshot.so
-vendor/lib/libchromatix_imx214_preview_binning.so
-vendor/lib/libchromatix_imx214_preview_night.so
-vendor/lib/libchromatix_imx214_preview.so
-vendor/lib/libchromatix_imx214_snapshot_hdr.so
-vendor/lib/libchromatix_imx214_snapshot_night.so
-vendor/lib/libchromatix_imx214_snapshot.so
-vendor/lib/libchromatix_imx214_video_binning.so
-vendor/lib/libchromatix_imx214_video_hdr.so
-vendor/lib/libchromatix_s5k5e2_common.so
-vendor/lib/libchromatix_s5k5e2_default_video.so
-vendor/lib/libchromatix_s5k5e2_preview_fb.so
-vendor/lib/libchromatix_s5k5e2_preview_gesture.so
-vendor/lib/libchromatix_s5k5e2_preview.so
-vendor/lib/libchromatix_s5k5e2_snapshot_fb.so
-vendor/lib/libchromatix_s5k5e2_snapshot.so
-vendor/lib/libchromatix_s5k5e2_video_hd.so
-vendor/lib/libchromatix_s5k5e2_zsl.so
-
-# Camera eeprom
-vendor/lib/libmmcamera_sonyimx214_eeprom.so
+vendor/lib/libchromatix_imx214_14045_truly_common.so
+vendor/lib/libchromatix_imx214_14045_truly_preview.so
+vendor/lib/libchromatix_imx214_14045_truly_snapshot.so
+vendor/lib/libchromatix_imx214_14045_truly_default_video.so
+vendor/lib/libchromatix_imx214_14045_truly_liveshot.so
+vendor/lib/libchromatix_imx214_14045_truly_small_video.so
+vendor/lib/libchromatix_imx214_14045_truly_preview_binning.so
+vendor/lib/libchromatix_imx214_14045_truly_video_binning.so
+vendor/lib/libchromatix_imx214_14045_truly_hfr_60.so
+vendor/lib/libchromatix_imx214_14045_truly_hfr_120.so
+vendor/lib/libchromatix_imx214_14045_truly_video_hdr.so
+vendor/lib/libchromatix_imx214_14045_truly_snapshot_hdr.so
+vendor/lib/libchromatix_imx214_14045_semco_common.so
+vendor/lib/libchromatix_imx214_14045_semco_preview.so
+vendor/lib/libchromatix_imx214_14045_semco_snapshot.so
+vendor/lib/libchromatix_imx214_14045_semco_default_video.so
+vendor/lib/libchromatix_imx214_14045_semco_liveshot.so
+vendor/lib/libchromatix_imx214_14045_semco_small_video.so
+vendor/lib/libchromatix_imx214_14045_semco_preview_binning.so
+vendor/lib/libchromatix_imx214_14045_semco_video_binning.so
+vendor/lib/libchromatix_imx214_14045_semco_hfr_60.so
+vendor/lib/libchromatix_imx214_14045_semco_hfr_120.so
+vendor/lib/libchromatix_imx214_14045_semco_video_hdr.so
+vendor/lib/libchromatix_imx214_14045_semco_snapshot_hdr.so
+vendor/lib/libchromatix_ov5648_14045_common.so
+vendor/lib/libchromatix_ov5648_14045_default_video_hd.so
+vendor/lib/libchromatix_ov5648_14045_default_video.so
+vendor/lib/libchromatix_ov5648_14045_preview_fb.so
+vendor/lib/libchromatix_ov5648_14045_preview.so
+vendor/lib/libchromatix_ov5648_14045_small_video.so
+vendor/lib/libchromatix_ov5648_14045_snapshot_fb.so
+vendor/lib/libchromatix_ov5648_14045_snapshot.so
+vendor/lib/libchromatix_ov5648_14045_zsl.so
+vendor/lib/libchromatix_s5k3m2_14045_common_panorama.so
+vendor/lib/libchromatix_s5k3m2_14045_common.so
+vendor/lib/libchromatix_s5k3m2_14045_default_video.so
+vendor/lib/libchromatix_s5k3m2_14045_hfr_120fps.so
+vendor/lib/libchromatix_s5k3m2_14045_hfr_60fps.so
+vendor/lib/libchromatix_s5k3m2_14045_hfr_90fps.so
+vendor/lib/libchromatix_s5k3m2_14045_liveshot.so
+vendor/lib/libchromatix_s5k3m2_14045_preview_panorama.so
+vendor/lib/libchromatix_s5k3m2_14045_preview.so
+vendor/lib/libchromatix_s5k3m2_14045_small_video.so
+vendor/lib/libchromatix_s5k3m2_14045_snapshot_panorama.so
+vendor/lib/libchromatix_s5k3m2_14045_snapshot.so
+vendor/lib/libchromatix_s5k3m2_14045_video_hd.so
+vendor/lib/libchromatix_s5k3m2_14045_zsl.so
 
 # Camera sensors
-vendor/lib/libmmcamera_imx214.so
-vendor/lib/libmmcamera_s5k5e2.so
+vendor/lib/libmmcamera_ov5648_14045.so
+vendor/lib/libmmcamera_imx214_14045.so
+vendor/lib/libmmcamera_s5k3m2_14045.so
 
 # Sensors
-vendor/lib/libcalmodule_memsic.so|88f069f25807aecafd46b0be3c47b7a192f6b767
+bin/psensord
+vendor/lib/libcalmodule_memsic.so
 
 # STLport
 vendor/lib/libstlport.so|e61ef21decc21472e06eacc841e7d61bf68ca9f3
 
 # Touchscreen
-etc/firmware/tp/14005/14005_FW_S3508_Tpk.img:vendor/firmware/tp/14005/14005_FW_S3508_Tpk.img
-etc/firmware/tp/14005/14005_Limit_Tpk.img:vendor/firmware/tp/14005/14005_Limit_Tpk.img
+etc/firmware/tp/14045/14045_FW_S4291_Tpk.img
+etc/firmware/tp/14045/14045_Limit_Tpk.img
+etc/firmware/tp/14045/14045_Firmware_Truly.img
+etc/firmware/tp/14045/14045_Limit_Truly.img

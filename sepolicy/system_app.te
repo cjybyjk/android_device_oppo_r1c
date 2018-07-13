@@ -1,2 +1,0 @@
-allow system_app otg_toggle_file:dir search;
-allow system_app otg_toggle_file:file rw_file_perms;

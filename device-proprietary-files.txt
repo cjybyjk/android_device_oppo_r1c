@@ -9,7 +9,6 @@ etc/tfa9890/settings/14045/Speech_0_0_TFA9890_1111.preset:vendor/firmware/left.t
 
 # Camera
 vendor/lib/libmmcamera_faceproc.so
-vendor/lib/libseemore.so
 
 # Camera autofocus
 vendor/lib/libactuator_ak7345_14045_camcorder.so
@@ -77,14 +76,14 @@ vendor/lib/libmmcamera_imx214_14045.so
 vendor/lib/libmmcamera_s5k3m2_14045.so
 
 # Sensors
-bin/psensord
+bin/psensord:vendor/bin/psensord
 vendor/lib/libcalmodule_memsic.so
 
 # STLport
 vendor/lib/libstlport.so|e61ef21decc21472e06eacc841e7d61bf68ca9f3
 
 # Touchscreen
-etc/firmware/tp/14045/14045_FW_S4291_Tpk.img
-etc/firmware/tp/14045/14045_Limit_Tpk.img
-etc/firmware/tp/14045/14045_Firmware_Truly.img
-etc/firmware/tp/14045/14045_Limit_Truly.img
+etc/firmware/tp/14045/14045_FW_S4291_Tpk.img:vendor/firmware/tp/14045/14045_FW_S4291_Tpk.img
+etc/firmware/tp/14045/14045_Limit_Tpk.img:vendor/firmware/tp/14045/14045_Limit_Tpk.img
+etc/firmware/tp/14045/14045_Firmware_Truly.img:vendor/firmware/tp/14045/14045_Firmware_Truly.img
+etc/firmware/tp/14045/14045_Limit_Truly.img:vendor/firmware/tp/14045/14045_Limit_Truly.img

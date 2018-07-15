@@ -104,22 +104,16 @@ void vendor_load_properties()
             property_set("ro.common.soft", "MSM_14045");
             property_override("ro.product.name", "R8207");
             property_override("ro.build.product", "R8207");
-            property_override("ro.build.fingerprint", "OPPO/R8207/R1C:4.4.4/KTU84P/1390465867:user/release-keys");
-            property_override("ro.build.description", "msm8916_32-user 4.4.4 KTU84P eng.root.20151213 release-keys");
         } else if (Trim(prj_version) == "14046") {
             property_override("ro.product.model", "R8200");
             property_set("ro.common.soft", "MSM_14046");
             property_override("ro.product.name", "R8200");
             property_override("ro.build.product", "R8200");
-            property_override("ro.build.fingerprint", "OPPO/R8200/R1C:4.4.4/KTU84P/1390465867:user/release-keys");
-            property_override("ro.build.description", "msm8916_32-user 4.4.4 KTU84P eng.root.20150515 release-keys");
         } else if (Trim(prj_version) == "14047") {
             property_override("ro.product.model", "R8205");
             property_set("ro.common.soft", "MSM_14047");
             property_override("ro.product.name", "R8205");
             property_override("ro.build.product", "R8205");
-            property_override("ro.build.fingerprint", "OPPO/R8205/R1C:4.4.4/KTU84P/1390465867:user/release-keys");
-            property_override("ro.build.description", "msm8916_32-user 4.4.4 KTU84P eng.root.20151215 release-keys");
         }
     }
 

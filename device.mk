@@ -45,11 +45,6 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
-# Camera
-PRODUCT_PACKAGES += \
-    libshim_camera \
-    libboringssl-compat
-
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
 

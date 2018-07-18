@@ -8,7 +8,10 @@ etc/tfa9890/settings/14045/Speech_0_0_TFA9890_1111.eq:vendor/firmware/left.tfa98
 etc/tfa9890/settings/14045/Speech_0_0_TFA9890_1111.preset:vendor/firmware/left.tfa9890_voice_table.preset
 
 # Camera
+vendor/lib/libmmcamera2_q3a_core.so
 vendor/lib/libmmcamera_faceproc.so
+vendor/lib/libts_detected_face_hal.so
+vendor/lib/libts_face_beautify_hal.so
 
 # Camera autofocus
 vendor/lib/libactuator_ak7345_14045_camcorder.so
@@ -78,9 +81,6 @@ vendor/lib/libmmcamera_s5k3m2_14045.so
 # Sensors
 bin/psensord:vendor/bin/psensord
 vendor/lib/libcalmodule_memsic.so
-
-# STLport
-vendor/lib/libstlport.so|e61ef21decc21472e06eacc841e7d61bf68ca9f3
 
 # Touchscreen
 etc/firmware/tp/14045/14045_FW_S4291_Tpk.img:vendor/firmware/tp/14045/14045_FW_S4291_Tpk.img

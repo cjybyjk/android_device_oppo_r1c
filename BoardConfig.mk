@@ -54,11 +54,5 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 13218315264 # 13218331648 - 16384
 LZMA_RAMDISK_TARGETS := recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
-# Shim
-TARGET_LD_SHIM_LIBS += \
-    /system/vendor/lib/libmmcamera2_stats_modules.so|libshim_camera.so \
-    /system/lib/hw/camera.vendor.msm8916.so|libshim_camera.so \
-    /system/vendor/lib/libmmqjpeg_codec.so|libboringssl-compat.so
-
 # Inherit from proprietary files
 include vendor/oppo/r1c/BoardConfigVendor.mk
